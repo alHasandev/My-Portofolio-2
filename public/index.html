@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mohamad Albie Portofolio</title>
+
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- link to css file -->
+</head>
+
+<body>
+  <header class="border-bottom">
+    <div class="header-logo">Mohamad Albie</div>
+    <div class="header-auxiliary">
+      <div class="social">
+        <a href="https://t.me/alHasandev" target="_blank">
+          <i class="fab fa-telegram-plane" title="telegram"></i>
+        </a>
+        <a href="https://www.instagram.com/mohamad9albie/" target="_blank">
+          <i class="fab fa-instagram" title="instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamad-albie-0a4384187" target="_blank">
+          <i class="fab fa-linkedin-in" title="linkedin"></i>
+        </a>
+      </div>
+      <a href="https://wa.me/6282149259826" target="_blank" class="btn btn-primary-reverse">
+        Contact Me
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="profile">
+      <nav>
+        <ul>
+          <li><a href="#contact" class="active">Contact</a></li>
+          <li><a href="#education">Educations</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#stat">Projects Statistic</a></li>
+        </ul>
+      </nav>
+      <article>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card large fixed" data-hash="contact">
+              <!-- this will filled with javascript -->
+            </div>
+
+            <div class="swiper-slide card large fixed" data-hash="education">
+              <div class="card-body about-me">
+                <!-- this will filled with javascript -->
+              </div>
+              <hr>
+              <div class="card-footer">
+                <h3 class="title">Educations</h3>
+                <div class="formal">
+                  <!-- this will filled with javascript -->
+                </div>
+                <div class="informal">
+                  <!-- this will filled with javascript -->
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card large fixed" data-hash="skill">
+              <!-- this will filled with javascript -->
+            </div>
+
+            <div class="swiper-slide card large fixed" data-hash="stat">
+              <div class="card-body">
+                <h3 class="title">Projects Statistic</h3>
+                <ul class="statistic">
+                  <!-- this will filled with javascript -->
+                </ul>
+              </div>
+              <hr>
+              <div class="card-footer">
+                <div class="total-projects">
+                  <h4 class="title">Total Projects</h4>
+                  <div id="total-project">
+                    <!-- this will filled with javascript --> 0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+    </section>
+    <section id="project">
+      <nav>
+        <ul>
+          <li><a href="#" class="tag-filter active" data-tag="all">All</a></li>
+          <!-- this will filled with javacript -->
+        </ul>
+      </nav>
+      <article>
+        <h3 class="title">My Projects</h3>
+        <div id="projects-list">
+          <!-- <div class="card mini">
+            <div class="card-image">
+              <img src="./images/projects/E-commerce-admin-panel.png">
+            </div>
+            <div class="card-desc">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+          <div class="card mini">
+            <div class="card-image">
+              <img src="./images/projects/RetailShopz-Dashboard.png">
+            </div>
+            <div class="card-desc">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+          <div class="card mini">
+            <div class="card-image">
+              <img src="./images/projects/pos.jpg">
+            </div>
+            <div class="card-desc">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+          <div class="card mini">
+            <div class="card-image">
+              <img src="./images/projects/super-admin-design.png">
+            </div>
+            <div class="card-desc">
+              <span class="tag">Android</span>
+              <span class="tag">Java</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div> -->
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- script / library javascript -->
+  <script src="https://kit.fontawesome.com/0b05a63e95.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script defer src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+  <!-- Initialize Firebase -->
+  <script>
+    let firebaseConfig = {
+      apiKey: "AIzaSyDHMJUtyijSKoWolCvPRkhyxhasIsOuxyM",
+      authDomain: "mohamad-albie.firebaseapp.com",
+      databaseURL: "https://mohamad-albie.firebaseio.com",
+      projectId: "mohamad-albie",
+      storageBucket: "mohamad-albie.appspot.com",
+      messagingSenderId: "994076267818",
+      appId: "1:994076267818:web:61d2e9e9a52facf33bfa53"
+    };
+  </script>
+  <script defer src="./firebase/init.js"></script>
+
+  <script src="./assets/vendor/swiper/swiper.min.js"></script>
+  <script src="./assets/library_js/simple.js"></script>
+  <script src="./assets/js/data.js"></script>
+  <script defer src="./assets/js/main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
